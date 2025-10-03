@@ -13,7 +13,7 @@ const TaskStatus = ({taskStatus, setTaskStatus,resolvedTasks,setResolvedTasks}) 
     }
     return (
         <div className=" pt-0  gap-8 p-4 px-5 mb-0 lg:w-[480px] md:w-[480px]">
-            <h2 className="text-lg font-semibold text-gray-800 mb-5 pt-0">Task Status</h2>
+            <h2 className="text-xl font-semibold px-1 mb-5 pt-0">Task Status</h2>
             <Container>
                 {taskStatus.length > 0 ? (
                     taskStatus.map((task) => (

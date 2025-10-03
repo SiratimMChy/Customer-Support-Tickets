@@ -7,7 +7,7 @@ import Navbar from './Components/Navbar'
 import Card from './Components/Card'
 import { Suspense } from 'react'
 
-const ticketPromise = fetch('/public/tickets.json')
+const ticketPromise = fetch('tickets.json')
   .then(res => res.json());
 
 
