@@ -2,14 +2,14 @@ import React from 'react';
 import { toast } from 'react-toastify';
 import Container from './Container';
 
-const TaskStatus = ({ taskStatus, setTaskStatus, resolvedTasks, setResolvedTask }) => {
+const TaskStatus = ({taskStatus, setTaskStatus,resolvedTasks,setResolvedTasks}) => {
     const handleCompleteTask = cTask => {
         const res = taskStatus.filter(el => el.id !== cTask.id)
         setTaskStatus(res);
-        setResolvedTask([...resolvedTasks, cTask]);
-        toast.info("Completed");
+        setResolvedTasks([...resolvedTasks, cTask]);
+        toast.success("Completed");
         toast.info("In Progess count decreased");
-        toast.success("Resolved count increased")
+        toast.info("Resolved count increased")
     }
     return (
         <div className=" pt-0  gap-8 p-4 px-5 mb-0 lg:w-[480px] md:w-[480px]">
@@ -53,3 +53,5 @@ const TaskStatus = ({ taskStatus, setTaskStatus, resolvedTasks, setResolvedTask 
 };
 
 export default TaskStatus;
+
+
