@@ -1,16 +1,14 @@
-# React + Vite
+Q#1
+JSX stands for JavaScript XML. JSX allows us to write HTML in React. JSX makes it easier to write and add HTML in React.It used with React to describe UI, producing React elements, and is a visual tool.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Q#2
+Props pass data to one component to another components on the otherhand state pass only within the componenets.Props can not be modified because its immutable and read only on the otherhand state can be modified because its mutable.
 
-Currently, two official plugins are available:
+Q#3
+useState is a React Hook that adds a state variable to a component.useState returns an array with two values- the current state and a function to update it. first array is state value which is a current state value aand second one is setState which is use for updated update state value.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Q#4
+In React share state by lifting it to the nearest common parent,passing it down as props, and pass event handlers down to allow children to change the parent's state.
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Q#5
+In React, event handling uses JSX syntax, similar to handling events on the DOM elements, by assigning our own functions as event handlers to elements, triggered by interactions like onClicks,onMouseEnter.onSubmit etc.
